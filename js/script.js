@@ -22,17 +22,34 @@ const totalBoxes = column * row;
 
 for (let i = 0; i < totalBoxes; i++){
 
-    // creo il collegamento alla funziome er creare una cella 
+    // utilizzo la funziome per creare una cella 
     const boxes = createBox();
 
+    //aggiungo la classe .boxes alle celle
     boxes.classList.add('boxes');
 
+    //inserisco le celle all'interno del container 
     container.appendChild(boxes);
 }
 
 
+// ---------------------------- Functions ----------------------------------// 
 
-// creo una cella 
+// genero una funzione per avere un numero random 
+function randomNumber(min, max) {
+    
+    const range = (max - min) + 1;
+
+
+    // genero un numero random 
+    const numeroRandom = Math.floor(Math.random() * range + min);
+    
+
+    return numeroRandom;
+}
+
+
+// creo una funzione per avere la cella 
 function createBox(){
     const item = document.createElement('div');
     item.classList.add('cell');
