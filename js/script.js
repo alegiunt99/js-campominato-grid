@@ -18,8 +18,19 @@ const row = 10;
 // calcolo il numero di celle totali
 const totalBoxes = column * row;
 
-// creo il collegamento alla funziome er creare una cella 
-const boxes = createBox();
+//creo un ciclo per creare 100 box
+
+for (let i = 0; i < totalBoxes; i++){
+
+    // creo il collegamento alla funziome er creare una cella 
+    const boxes = createBox();
+
+    boxes.classList.add('boxes');
+
+    container.appendChild(boxes);
+}
+
+
 
 // creo una cella 
 function createBox(){
@@ -31,6 +42,3 @@ function createBox(){
 
 
 
-boxes.classList.add('boxes');
-
-container.appendChild(boxes);
