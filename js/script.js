@@ -30,6 +30,14 @@ for (let i = 0; i < totalBoxes; i++){
 
     //inserisco le celle all'interno del container 
     container.appendChild(boxes);
+
+
+    //creo un evento che cambia colore delle celle al click
+    boxes.addEventListener('click',
+        () => {
+            //aggiungo una classe che cambia il colore alla cella
+            boxes.classList.toggle('green-cell');
+    })
 }
 
 

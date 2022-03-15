@@ -23,3 +23,7 @@
     vertical-align: middle;
     border: 1px solid red;
 }
+
+.green-cell{
+    background-color: rgb(72, 255, 72);
+}
