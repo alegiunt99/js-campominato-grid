@@ -6,3 +6,20 @@
 }
 
 /* Content */
+
+.container{
+    width: 700px;
+    height: 700px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxes{
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    vertical-align: middle;
+    border: 1px solid red;
+}
