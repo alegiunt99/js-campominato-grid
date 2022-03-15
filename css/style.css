@@ -7,7 +7,9 @@
 
 /* Content */
 
-.container{
+.container-1,
+.container-2,
+.container-3{
     width: 700px;
     height: 700px;
     margin: 50px auto;
@@ -15,12 +17,46 @@
     flex-wrap: wrap;
 }
 
-.boxes{
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    line-height: 70px;
-    vertical-align: middle;
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.difficult{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.boxes-100{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.boxes-81{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.boxes-49{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid red;
     cursor: pointer;
 }
