@@ -25,9 +25,6 @@ for (let i = 0; i < totalBoxes; i++){
     // utilizzo la funziome per creare una cella 
     const boxes = createBox();
 
-    //aggiungo la classe .boxes alle celle
-    boxes.classList.add('boxes');
-
     //inserisco le celle all'interno del container 
     container.appendChild(boxes);
 
@@ -60,7 +57,7 @@ function randomNumber(min, max) {
 // creo una funzione per avere la cella 
 function createBox(){
     const item = document.createElement('div');
-    item.classList.add('cell');
+    item.classList.add('boxes');
     return item;
 }
 
