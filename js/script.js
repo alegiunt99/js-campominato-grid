@@ -28,6 +28,8 @@ for (let i = 0; i < totalBoxes; i++){
     //inserisco le celle all'interno del container 
     container.appendChild(boxes);
 
+    //aggiungo un numero alla cella
+    boxes.innerText = i + 1;
 
     //creo un evento che cambia colore delle celle al click
     boxes.addEventListener('click',
@@ -40,19 +42,6 @@ for (let i = 0; i < totalBoxes; i++){
 
 // ---------------------------- Functions ----------------------------------// 
 
-// genero una funzione per avere un numero random 
-function randomNumber(min, max) {
-    
-    const range = (max - min) + 1;
-
-
-    // genero un numero random 
-    const numeroRandom = Math.floor(Math.random() * range + min);
-    
-
-    return numeroRandom;
-}
-
 
 // creo una funzione per avere la cella 
 function createBox(){
@@ -60,7 +49,6 @@ function createBox(){
     item.classList.add('boxes');
     return item;
 }
-
 
 
 
